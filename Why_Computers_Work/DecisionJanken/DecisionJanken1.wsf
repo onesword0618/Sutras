@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+    <![CDATA[
+      If (A = 0) And (B = 0) Then
+        MsgBox "あいこ"
+      ElseIf (A = 0) And (B = 1) Then
+        MsgBox "Aの勝ち"
+      ElseIf (A = 0) And (B = 2) Then
+        MsgBox "Bの勝ち"
+      ElseIf (A = 1) And (B = 0) Then
+        MsgBox "Bの勝ち"
+      ElseIf (A = 1) And (B = 1) Then
+        MsgBox "あいこ"
+      ElseIf (A = 1) And (B = 2) Then
+        MsgBox "Aの勝ち"
+      ElseIf (A = 2) And (B = 0) Then
+        MsgBox "Aの勝ち"
+      ElseIf (A = 2) And (B = 1) Then
+        MsgBox "Bの勝ち"
+      ElseIf (A = 2) And (B = 2) Then
+        MsgBox "あいこ"
+    ]]>
+    </script>
+  </job>
+</package>

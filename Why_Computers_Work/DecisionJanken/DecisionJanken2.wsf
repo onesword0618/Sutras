@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+    <![CDATA[
+      If A = B Then
+        MsgBox "あいこ"
+      ElseIf A = (B + 1) Mod 3 Then
+        MsgBox "Bの勝ち"
+      Else
+        MsgBox "Aの勝ち"
+    ]]>
+    </script>
+  </job>
+</package>
