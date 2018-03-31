@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+    <![CDATA[
+      a = 92
+      s = "は、素数です。"
+      For i = 2 to (a - 1)
+          If a Mod i = 0 Then
+              s = "は、素数ではありません。"
+              Exit For
+          End If
+      Next
+      
+      MsgBox CStr(a) & s
+    ]]>
+    </script>
+  </job>
+</package>
