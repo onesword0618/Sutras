@@ -1,0 +1,86 @@
+<!-- 
+成果物：calculator
+作成日：20170929 
+更新日：
+作成者：Inoue.k
+-->
+<html>
+	<head>
+		<meta charset ="utf-8"/>
+		<link href = "calculator.css" rel= "stylesheet" type = "text/css"/>
+		<script src ="jquery-3.2.1.js"></script>
+		<script src ="calculator.js"></script>
+		<title>calc</title>
+	</head>
+	<body>
+		<table id = "calc">
+			<tr>
+				<td colspan = "4"><div id ="disp"></div></td>
+			</tr>
+			<tr>
+				<td colspan = "3">
+					<div id = "caption"></div>
+				</td>
+				<td>
+					<input class = "key clear" type = "button" Value = "C"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input class = "key digit" type = "button" Value = "７" digit = "7"/>
+				</td>
+				<td>
+					<input class = "key digit" type = "button" Value = "８" digit = "8"/>
+				</td>
+				<td>
+					<input class = "key digit" type = "button" Value = "９" digit = "9"/>
+				</td>
+				<td>
+					<input class = "key operator" type = "button" Value = "÷" operator = "/"/>
+				</td>		
+			</tr>
+			<tr>
+				<td>
+					<input class = "key digit" type = "button" Value = "４" digit = "4"/>
+				</td>
+				<td>
+					<input class = "key digit" type = "button" Value = "５" digit = "5"/>
+				</td>
+				<td>
+					<input class = "key digit" type = "button" Value = "６" digit = "6"/>
+				</td>
+				<td>
+					<input class = "key operator" type = "button" Value = "×" operator = "*"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input class = "key digit" type = "button" Value = "１" digit = "1"/>
+				</td>
+				<td>
+					<input class = "key digit" type = "button" Value = "２" digit = "2"/>
+				</td>
+					<td>
+					<input class = "key digit" type = "button" Value = "３" digit = "3"/>
+				</td>
+				<td>
+					<input class = "key operator" type = "button" Value = "- " operator = "-"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input class = "key digit" type = "button" Value = "０" digit = "0"/>
+				</td>
+				<td>
+					<input class = "key period" type = "button" Value = "．"/>
+				</td>
+					<td>
+					<input class = "key equal" type = "button" Value = "＝"/>
+				</td>
+				<td>
+					<input class = "key operator" type = "button" Value = "+" operator = "+"/>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+/**
+成果物：calculator
+作成日：20170929 
+更新日：
+作成者：Inoue.k
+**/
+
+/* 計算機に対して装飾する */
+table{
+	border-style: outset;
+	border-width: 10px;
+	background-color:#e0e0e0;
+}
+
+/* 動作確認用 */
+#caption{
+	border-style:double;
+	border-color:blue;
+	text-align:center;
+	vertical-align:middle;
+	color:blue;
+	font-style:italic;
+}
+/* 計算画面に対して装飾する */
+#disp{
+	border-style:double;
+	height:36px;
+	text-align:right;
+	vertical-align:middle;
+	font-size:x-large;
+	font-weight:bold;
+	color:#00ff00;
+	background-color:#000000;
+}
+/* クラスに「key」が含まれるものに対して装飾する */
+.key{
+	width:36px;
+	height:36px;
+	text-align: center;
+	vertical-align:middle;
+}
