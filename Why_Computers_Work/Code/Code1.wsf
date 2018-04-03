@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+    <![CDATA[
+      hirabun = InputBox("平文を入力してください。")
+      angobun = ""
+      For i = 1 To Len(hirabun)
+        moji = mid(hirabun,i,1)
+        angobun = angobun & Chr(Asc(moji) + 3)
+      Next
+      MsgBox angobun
+    ]]>
+    </script>
+  </job>
+</package>
