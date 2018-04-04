@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+    <![CDATA[
+      angoubun = InputBox("暗号文を入力してください。")
+      hirabun = ""
+
+      For kagi = 0 To 9
+        hirabun = hirabun & "鍵" & CStr(kagi) & ":"
+
+        For i = 1 To Len(angoubun)
+          moji = Mid(angoubun,i,1)
+
+          hirabun = hirabun & Chr(Asc(moji) Xor kagi)
+        Next
+
+        hirabun = hirabun & Chr(&HD)
+      Next
+      MsgBox hirabun
+    ]]>
+    </script>
+  </job>
+</package>
