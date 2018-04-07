@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.Mutter;
+import model.PostMutterLogic;
 import model.User;
 
 /**
@@ -57,5 +58,37 @@ public class Main extends HttpServlet {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp"); //$NON-NLS-1$
 			dispatcher.forward(request, response);
 		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	protected void doPost(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+		
+		// リクエストパラメータの取得
+		request.setCharacterEncoding("UTF-8"); //$NON-NLS-1$
+		String text = request.getParameter("text"); //$NON-NLS-1$
+		
+		// 入力値チェック
+		if(text != null && text.length() != 0) {
+			
+			// アプリケーションスコープに保存されたつぶやきリストを取得
+			ServletContext application = this.getServletContext();
+			
+			List<Mutter> mutterList = (List<Mutter>) application.getAttribute("mutterList"); //$NON-NLS-1$
+			
+			// セッションスコープに保存されたユーザー情報を取得
+			HttpSession session = request.getSession();
+			User loginUser = (User) session.getAttribute("loginUser"); //$NON-NLS-1$
+			
+			// つぶやきをつぶやきリストに追加
+			Mutter mutter = new Mutter(loginUser.getName(),text);
+			PostMutterLogic postMutterLogic = new PostMutterLogic();
+			postMutterLogic.execute(mutter, mutterList);
+			
+			application.setAttribute("mutterList", mutterList); //$NON-NLS-1$
+		}
+		
+		// メイン画面にフォワード
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp"); //$NON-NLS-1$
+		dispatcher.forward(request, response);
 	}
 }
