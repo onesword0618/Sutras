@@ -85,6 +85,9 @@ public class Main extends HttpServlet {
 			postMutterLogic.execute(mutter, mutterList);
 			
 			application.setAttribute("mutterList", mutterList); //$NON-NLS-1$
+		} else {
+			// エラーメッセージをリクエストスコープに保存
+			request.setAttribute("errorMsg","つぶやきが入力されていません"); //$NON-NLS-1$ //$NON-NLS-2$
 		}
 		
 		// メイン画面にフォワード
