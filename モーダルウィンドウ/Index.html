@@ -1,0 +1,40 @@
+<!--
+	練習スクリプト
+	作成日：20170711
+	更新日：20170712
+	作成者：Inoue.k
+ -->
+<!DOCTYPE html>
+	<!--ここで言語を設定する-->
+	<html lang="ja">
+		<!--
+			ヘッダー情報
+			文字コード、CSSをここに設定
+		-->
+		<head>
+			<meta charset="utf-8">
+			<title>ModalWindow</title>
+			<link rel="stylesheet"href="css/style.css">
+		</head>
+		<!--メイン部分-->
+		<body>
+			<!--idとclassは設定したほうが処理部分を作る時に確定することができる。-->
+			<div id="modal"class="hidden">
+				<p>
+					モーダルウィンドウ
+				</p>
+				
+				<div id="close">
+					閉じる
+				</div>
+			</div>
+					
+			<div id="open">
+				ModalWindow
+			</div>
+			<!--隠れクラス-->
+			<div id="mask"class="hidden"></div>
+		<!--JavaScriptをここに設定-->
+		<script src="js/main.js"></script>
+		</body>
+	</html>
