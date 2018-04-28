@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+    <![CDATA[
+      Dim kagi(2)
+      kagi(0) = 3
+      kagi(1) = 4
+      kagi(2) = 5
+      bun1 = InputBox("平文または暗号文を入力してください。")
+      bun2 = ""
+      For i = 1 To Len(bun1)
+          moji = Mid(bun1,i,1)
+          bun2 = bun2 & Chr(Asc(moji) Xor kagi((i - 1) Mod 3))
+      Next
+      MsgBox bun2
+    ]]>
+    </script>
+  </job>
+</package>
