@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Hello</title>
+</head>
+<body>
+<p>本ページが<span id="now"></span>をお知らせします</p>
+	<script>
+
+	window.onload = function(){
+		var date = new Date,
+		now = date.getFullYear()	+ '年'
+			+ (date.getMonth() +1)	+ '月'
+			+ date.getDate()		+ '日'
+			+ date.getHours()		+ '時'
+			+ date.getMinutes()		+ '分'
+			+ date.getSeconds()		+ '秒';
+		document.getElementById('now').innerHTML = now;
+	};	
+	</script>
+</body>
+</html>
