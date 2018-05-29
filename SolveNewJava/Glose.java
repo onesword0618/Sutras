@@ -1,4 +1,4 @@
-// ‹…‚Ì•\–ÊÏ‚Æ‘ÌÏ‚ğ‹‚ß‚éi‰~ü—¦3.14‚Ífinal•Ï”j
+// çƒã®è¡¨é¢ç©ã¨ä½“ç©ã‚’æ±‚ã‚ã‚‹ï¼ˆå††å‘¨ç‡3.14ã¯finalå¤‰æ•°ï¼‰
 
 import java.util.Scanner;
 
@@ -9,11 +9,10 @@ class Globe {
 		Scanner stdln = new Scanner(System.in);
 		final double Pl = 3.1416;
 		
-		System.out.println("‹…‚Ì•\–ÊÏ‚Æ‘ÌÏ‚ğ‹‚ß‚Ü‚·B");
-		System.out.println("”¼ŒaF");	// ”¼Œa‚Ì“ü—Í‚ğ‘£‚·
-		double r = stdln.nextDouble();	// r‚ÉÀ”’l‚ğ“Ç‚İ‚Ş
-
-		System.out.println("•\–ÊÏ‚Í" + (4 * Pl * r * r) + "‚Å‚·B");
-		System.out.println("•\–ÊÏ‚Í" + (4 / 3.0 * Pl * r * r * r) + "‚Å‚·B");
+		System.out.println("çƒã®è¡¨é¢ç©ã¨ä½“ç©ã‚’æ±‚ã‚ã¾ã™ã€‚");
+		System.out.println("åŠå¾„ï¼š");	// åŠå¾„ã®å…¥åŠ›ã‚’ä¿ƒã™
+		double r = stdln.nextDouble();	// rã«å®Ÿæ•°å€¤ã‚’èª­ã¿è¾¼ã‚€
+		System.out.println("è¡¨é¢ç©ã¯" + (4 * Pl * r * r) + "ã§ã™ã€‚");
+		System.out.println("è¡¨é¢ç©ã¯" + (4 / 3.0 * Pl * r * r * r) + "ã§ã™ã€‚");
 	}
 }
