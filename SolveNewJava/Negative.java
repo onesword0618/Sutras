@@ -10,6 +10,6 @@ class Negative {
 		int n = stdIn.nextInt();
 	
 		if(n < 0)
-		Sytem.out.prontln("その値は負です。");
+		System.out.println("その値は負です。");
 	}
 }
