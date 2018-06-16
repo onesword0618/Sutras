@@ -3,7 +3,7 @@ rem outPut
 dir /w /o:g
 echo ****************************
 echo output -list
-set /p F_NAME_INPUT="What output File name?（.csv入力不要）"
+set /p F_NAME_INPUT="What output File name?（no input .csv）"
 if exist %F_NAME_INPUT%.csv goto :EXTFILE
 dir /a:-d-s-h /b /s >> %F_NAME_INPUT%.csv
 goto :EOF
