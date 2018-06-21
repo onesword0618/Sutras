@@ -1,9 +1,9 @@
 @echo off
 rem Get DirName.bat's dir path.
-rem �u%0�v��u%1�v�ȂǁA�u%�����v�́A������\���A�u0�v�͓��ʂɁA���̃o�b�`�t�@�C�����g�A����ȍ~�͑������A�������ƂȂ�܂��B
-rem %~d0	%0���h���C�u���������ɓW�J
-rem %~p0	%0���p�X�������ɓW�J
-rem %0���h���C�u�����ƃp�X�����ɓW�J���܂��B
+rem 「%0」や「%1」など、「%数字」は、引数を表し、「0」は特別に、そのバッチファイル自身、それ以降は第一引数、第二引数となります。
+rem %~d0	%0をドライブ文字だけに展開
+rem %~p0	%0をパス名だけに展開
+rem %0をドライブ文字とパスだけに展開します。
 cd /d %~dp0
 
 rem Set Title this Bat's name.
