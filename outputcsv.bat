@@ -1,4 +1,4 @@
-rem outPut
+rem outputcsv
 @echo off
 dir /w /o:g
 echo ****************************
