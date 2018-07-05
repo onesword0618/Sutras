@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="SJIS">
-    <title>ƒLƒƒƒ‰f’f</title>
+    <meta charset="UTF-8">
+    <title>ã‚­ãƒ£ãƒ©è¨ºæ–­</title>
     <style>
         body {text-align: center;}
     </style>
 </head>
 <body>
-    <h1>ƒLƒƒƒ‰f’f</h1>
+    <h1>ã‚­ãƒ£ãƒ©è¨ºæ–­</h1>
     <p><input type="text" id="name" value=""></p>
-    <p><input type="button" id="getResult" value="f’fI"></p>
-    <h2>f’fŒ‹‰Ê</h2>
-    <p id="result">‚±‚¿‚ç‚ÉŒ‹‰Ê‚ª•\¦‚³‚ê‚Ü‚·B</p>
+    <p><input type="button" id="getResult" value="è¨ºæ–­ï¼"></p>
+    <h2>è¨ºæ–­çµæœ</h2>
+    <p id="result">ã“ã¡ã‚‰ã«çµæœãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚</p>
     <div id="tweet"></div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         $(function() {
             $('#getResult').click(function() {
-                // –¼‘O‚Ìæ“¾
+                // åå‰ã®å–å¾—
                 var name = $('#name').val();
                 if (name === "") {
-                    alert('–¼‘O‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢I');
+                    alert('åå‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼');
                     return;
                 }
 
-                // type‚Ìæ“¾
-                var types = ['—EÒ', '–‚–@g‚¢', 'ím', '—V‚Ñl', 'ƒX[ƒp[ƒXƒ^['];
+                // typeã®å–å¾—
+                var types = ['å‹‡è€…', 'é­”æ³•ä½¿ã„', 'æˆ¦å£«', 'éŠã³äºº', 'ã‚¹ãƒ¼ãƒ‘ãƒ¼ã‚¹ã‚¿ãƒ¼'];
                 var type = types[Math.floor(Math.random() * types.length)];
 
-                // character‚Ìæ“¾
-                var characters = ['Œ«‚¢', '—E‚Ü‚µ‚¢', '‚©‚í‚¢‚¢', 'î‚¯‚È‚¢', '—Š‚è‚È‚¢'];
+                // characterã®å–å¾—
+                var characters = ['è³¢ã„', 'å‹‡ã¾ã—ã„', 'ã‹ã‚ã„ã„', 'æƒ…ã‘ãªã„', 'é ¼ã‚Šãªã„'];
                 var character = characters[Math.floor(Math.random() * characters.length)];
 
-                // Œ‹‰Ê‚Ì•\¦
-                var result = name + '‚³‚ñ‚Íu' + character + type + 'vƒ^ƒCƒv‚Å‚·I';
+                // çµæœã®è¡¨ç¤º
+                var result = name + 'ã•ã‚“ã¯ã€Œ' + character + type + 'ã€ã‚¿ã‚¤ãƒ—ã§ã™ï¼';
                 $('#result').text(result);
 
-                // ƒcƒC[ƒgƒŠƒ“ƒN‚Ì•\¦
-                var tweetLink = "<a href='https://twitter.com/intent/tweet?text=" + encodeURIComponent(result) + "&hashtags=dotinstall' target='_blank'>ƒcƒC[ƒg‚·‚é</a>";
+                // ãƒ„ã‚¤ãƒ¼ãƒˆãƒªãƒ³ã‚¯ã®è¡¨ç¤º
+                var tweetLink = "<a href='https://twitter.com/intent/tweet?text=" + encodeURIComponent(result) + "&hashtags=dotinstall' target='_blank'>ãƒ„ã‚¤ãƒ¼ãƒˆã™ã‚‹</a>";
                 $('#tweet').html(tweetLink);
             });
         });
