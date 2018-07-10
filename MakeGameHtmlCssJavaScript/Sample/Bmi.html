@@ -4,11 +4,11 @@
   <meta charset="utf-8">
     <script>
       function calc(){
-        var w = document.getElementById("weight").value;
-        var h = document.getElementById("height").value;
+        var weight = document.getElementById("weight").value;
+        var height = document.getElementById("height").value;
         // BMI指数　=　体重(kg)  /  （身長(m) * 身長(m)）
-        var r = w / (h * h);
-        document.getElementById("result").textContent = "あなたのBMIは" + r +"です";
+        var result = weight / (height * height);
+        document.getElementById("result").textContent = "あなたのBMIは" + result +"です";
       }
     </script>
   </head>
