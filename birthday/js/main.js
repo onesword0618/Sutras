@@ -1,17 +1,17 @@
 function getAge() {
-    // “ü—Í’l‚Ìæ“¾
+    // å…¥åŠ›å€¤ã®å–å¾—
     var birthday = document.getElementById('birthday').value.split("-");
 
-    // “ú•tƒIƒuƒWƒFƒNƒg‚Ìì¬
+    // æ—¥ä»˜ä½œæˆ
     var d1 = new Date(birthday[0], birthday[1]-1, birthday[2]);
     var d2 = new Date();
 
-    // “ú”A”N—î‚ÌŒvZ
+    // æ—¥æ•°ã€å¹´é½¢ã®è¨ˆç®—
     var diff = d2.getTime() - d1.getTime();
     var daysPast = Math.floor(diff / (1000 * 60 * 60 * 24));
     var age = Math.floor(daysPast / 365.25);
 
-    // Œ‹‰Ê‚Ì•\¦
+    // çµæœã®è¡¨ç¤º
     document.getElementById('daysPast').innerHTML = daysPast;
     document.getElementById('age').innerHTML = age;
 }
