@@ -31,10 +31,7 @@
     }
 
     function adjustPosition(pos, r, max) {
-      // if (x - r < 0) x = r;
-      // if (y - r < 0) y = r;
-      // if (x + r > canvas.width) x = canvas.width - r;
-      // if (y + r > canvas.height) y = canvas.height - r;
+
       if (pos - r < 0) {
         return r;
       } else if (pos + r > max) {
@@ -86,10 +83,6 @@
       this.x += this.vx;
       this.y += this.vy;
     };
-
-    // var ball = new Ball(rand(100, 200), rand(100, 200), rand(10, 50));
-    // ball.draw();
-
     Stage = function() {
       this.update = function() {
         var i;
