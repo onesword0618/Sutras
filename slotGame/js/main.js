@@ -1,6 +1,3 @@
-// 作成日：20170712
-// 更新日：
-// 作成者：Inoue.k
  (function() {
         'use strict';
 
