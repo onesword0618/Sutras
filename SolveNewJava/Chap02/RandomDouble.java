@@ -1,4 +1,4 @@
-// 問題2-１３
+// 問題2-13
 import java.util.Random;
 
 class RandomDouble {

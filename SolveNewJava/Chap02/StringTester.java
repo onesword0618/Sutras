@@ -1,4 +1,4 @@
-// 問題2-１６
+// 問題2-16
 // String型の文字列の初期化と変数に文字列を代入するプログラム
 class StringTester {
 	public static void main(String[] args) {
