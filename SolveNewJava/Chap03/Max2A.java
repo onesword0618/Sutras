@@ -1,4 +1,5 @@
-// “Ç‚İ‚ñ‚¾2‚ÂÀ”’l‚ª‘å‚«‚¢•û‚ğ•\¦i‚»‚Ì1Fif•¶j
+// å•é¡Œ3-12
+// äºŒã¤ã®å®Ÿæ•°å€¤ã‚’èª­ã¿è¾¼ã‚“ã§ã€å¤§ãã„æ–¹ã®å€¤ã‚’è¡¨ç¤ºã™ã‚‹ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ä½œæˆã›ã‚ˆ
 import java.util.Scanner;
 
 class Max2A {
@@ -6,17 +7,18 @@ class Max2A {
 	 public static void main(String[] args) {
     Scanner stdIn = new Scanner(System.in);
 
-	 System.out.println("À”a:");
-	 	double a = stdIn.nextDouble();	
-     System.out.println("À”bF");
+	 System.out.println("å®Ÿæ•°a:");
+	 	double a = stdIn.nextDouble();
+     System.out.println("å®Ÿæ•°b");
     	double b = stdIn.nextDouble();
-     
+
 	 double max;
-	 	if (a > b) 
-	 		max = a;
-	 	else
-	 		max = b;
-	 	
-	 	System.out.println("‘å‚«‚¢‚Ù‚¤‚Ì’l‚Í"+ max + "‚Å‚·B");
+
+	 	if (a > b) {
+	 			max = a;
+	 	} else {
+	 			max = b;
+		}
+	 	System.out.println("å¤§ãã„ã»ã†ã®å€¤ã¯"+ max + "ã§ã™");
 	 }
 }

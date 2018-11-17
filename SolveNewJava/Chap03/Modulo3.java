@@ -1,4 +1,6 @@
-// “Ç‚İ‚ñ‚¾®”’l‚ª³‚Å‚ ‚ê‚Î3‚ÅŠ„‚Á‚½—]è‚ğ•\¦ 
+// å•é¡Œ3-10
+// æ­£ã®æ•´æ•°å€¤ã‚’èª­ã¿è¾¼ã‚“ã§ã€ãã‚Œã‚’3ã§å‰²ã£ãŸå€¤ã«å¿œã˜ã¦ã€Œãã®å€¤ã¯3ã§å‰²ã‚Šåˆ‡ã‚Œã¾ã™ã€ã€Œãã®å€¤ã‚’3ã§å‰²ã£ãŸä½™ã‚Š1ã§ã™ã€‚ã€ã€Œãã®å€¤ã‚’3ã§å‰²ã£ãŸä½™ã‚Šã¯2ã§ã™ã€
+// ã„ãšã‚Œã‹ã‚’è¡¨ç¤ºã™ã‚‹ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ä½œæˆ
 import java.util.Scanner;
 
 class Modulo3 {
@@ -6,18 +8,19 @@ class Modulo3 {
 	public static void main(String[] args) {
 
 		Scanner stdIn = new Scanner(System.in);
-		
-		System.out.println("®”’lF");
+
+		System.out.println("æ•´æ•°å€¤ï¼š");
 		int n = stdIn.nextInt();
-		
-		if (n > 0)
-			if (n % 3 == 0)
-				System.out.println("‚»‚Ì’l‚Í3‚ÅŠ„‚èØ‚ê‚Ü‚·B");
-			else if (n % 3 == 1)
-				System.out.println("‚»‚Ì’l‚ğ3‚ÅŠ„‚Á‚½—]‚è‚Í1‚Å‚·B");
-			else
-				System.out.println("‚»‚Ì’l‚ğ3‚ÅŠ„‚Á‚½—]‚è‚Í2‚Å‚·B");
-		else
-			System.out.println("³‚Å‚È‚¢’l‚ª“ü—Í‚³‚ê‚Ü‚µ‚½B");
+
+		if (n > 0){
+			if (n % 3 == 0) {
+					System.out.println("ãã®å€¤ã¯3ã§å‰²ã‚Šåˆ‡ã‚Œã¾ã™ã€‚");
+			} else if (n % 3 == 1) {
+					System.out.println("ãã®å€¤ã‚’3ã§å‰²ã£ãŸä½™ã‚Šã¯1ã§ã™");
+		 	}	else
+					System.out.println("ãã®å€¤ã‚’3ã§å‰²ã£ãŸä½™ã‚Šã¯2ã§ã™");
+	 	}	else {
+				System.out.println("æ­£ã§ãªã„å€¤ãŒå…¥åŠ›ã•ã‚Œã¾ã—ãŸ");
+		}
 	}
 }
