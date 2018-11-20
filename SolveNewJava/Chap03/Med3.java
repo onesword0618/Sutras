@@ -17,17 +17,17 @@ class Med3 {
 
     int med;
 
-    if (a >= b){
-      if(b >= c){
-        med = b;
-    } else if (a <= c){
+    if (a >= b) {
+      if (b >= c) {
+         med = b;
+    } else if (a <= c) {
         med = a;
     } else {
       med = c;
     }
-  } else if (a > c){
+  } else if (a > c) {
     med = a;
-  } else if (b > c){
+  } else if (b > c) {
     med = c;
   } else{
     med = b;

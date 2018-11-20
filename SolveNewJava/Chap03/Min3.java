@@ -1,24 +1,25 @@
-// O‚Â‚Ì®”’l‚ÌÅ¬’l‚ğ‹‚ß‚é
+//å•é¡Œ3-1ï¼• ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã‹ã‚‰èª­ã¿è¾¼ã‚“ã ä¸‰ã¤ã®æ•´æ•°å€¤ã®æœ€å°å€¤ã‚’æ±‚ã‚ã¦è¡¨ç¤ºã™ã‚‹ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ä½œæˆ
+
 import java.util.Scanner;
 
 class Min3 {
 
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
-		
-		System.out.print("®”’la:");
+
+		System.out.print("æ•´æ•°a:");
 		int a = stdIn.nextInt();
-		
-		System.out.print("®”’lb:");
+
+		System.out.print("æ•´æ•°b:");
 		int b = stdIn.nextInt();
-		
-		System.out.print("®”’lc:");
+
+		System.out.print("æ•´æ•°c:");
 		int c = stdIn.nextInt();
-		
+
 		int min = a;
 		if (b <  min) min = b;
 		if (c <  min) min = c;
-		
-		System.out.println("Å¬’l‚Í" + min + "‚Å‚·B");
+
+		System.out.println("æœ€å°å€¤ã¯" + min + "ã§ã™");
 	}
 }
