@@ -2,10 +2,14 @@
 
 body {
   font-family: sans-serif;
+  color: #002a5a;
+  line-height: 1.7;
 }
 
 h1 {
   font-size: 21px;
+  text-align: center;
+  color: blue;
 }
 
 h2 {
@@ -13,6 +17,7 @@ h2 {
 }
 
 p {
+  text-align: justify;
   margin-top: 0;
   margin-bottom: 0;
 }
